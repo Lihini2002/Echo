@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\Models\Category;
 use App\Models\Product;
-use Illuminate\Http\Request;
+use Illuminate\Http\Request\StoreProductRequest;
 
 class ProductController extends Controller
 {
@@ -25,34 +25,42 @@ class ProductController extends Controller
      */
     public function create()
     {
+        $sellerId = Auth::id();
             
-        return view('admin.products.form', [
+        return view('admin.products.create', [
             'product' => new Product(),
+            // 'categories' => CategoryController::whereNull('parent_id')->get()
+            'categories' => Category::getTopLevelCategories(),
+            'seller_id' => $sellerId
+
         ]);
         
-      
         //
     }
+
 
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
-    {
-        $validated = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email|unique:users,email',
-            'role' => 'required'
-        ]);
+   
+public function store(StoreProductRequest $request)
+{
+    $validated = $request->validated();
 
-        $validated['password'] = bcrypt('password');
+    Product::create($validated);
 
-        User::create($validated);
+    // Add any additional logic as needed
 
-        return redirect()->route('user.index')->with('success', 'User successfully created!');
-        //
-    }
+    return redirect()->route('products')
+                     ->with('success', 'Product created successfully.');
+}
 
+
+        //are we really redirecting this to this?
+        //oka so we gotta change this to admin to seller because seller is the one who should be posting?
+        //for now we just design it for admin adn then introduce seller later. 
+        //product index is common to all. 
+ 
     /**
      * Display the specified resource.
      */

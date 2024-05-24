@@ -64,4 +64,14 @@ class User extends Authenticatable
     protected $appends = [
         'profile_photo_url',
     ];
+
+
+    //if the user is associated with a brand , it will let in to the respective Brand Class. 
+    public function brand(): HasOne
+    {
+        return $this->hasOne(Brand::class, 'user_id', 'id');
+    }
+
+
+    //have a function here to get all the users who
 }

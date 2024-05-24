@@ -70,7 +70,7 @@
 
       {{-- The product catalogue start --}}
 
-      <section class="flex-col justify-center gap-8">
+      {{-- <section class="flex-col justify-center gap-8">
         <div class="container mx-auto mt-10 px-6 ">
           <h2 class="text-3xl font-extrabold tracking-tight pl-2 uppercase py-5 text-gray-900 text-left">Featured Products</h2>
          
@@ -85,11 +85,11 @@
                      <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
 
                         {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                        <a href="https://ibb.co/J5TTTPm"><img src="https://i.ibb.co/bzVVVnQ/Coconut-Cheese.jpg" alt="Coconut-Cheese" border="0"></a>
+                        {{-- <a href="https://ibb.co/J5TTTPm"><img src="https://i.ibb.co/bzVVVnQ/Coconut-Cheese.jpg" alt="Coconut-Cheese" border="0"></a> --}}
                         {{-- <a href="https://ibb.co/6NwLMjC"><img src="imageLink" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br /> --}}
-                    </div>
+                    {{-- </div> --}}
                     
-
+{{-- 
                       <div class="mt-4 flex justify-between">
                         <div>
                           <h3 class="text-sm text-gray-700">
@@ -102,11 +102,11 @@
                         </div>
                         <p class="text-sm font-medium text-gray-900">Rs.500</p>
                       </div>
-                    </div>
+                    </div> --}}
 
 
                     {{-- new Product  --}}
-                    <div class="group relative">
+                    {{-- <div class="group relative">
                      
                       <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                         <a href="https://ibb.co/tDdQCHk"><img src="https://i.ibb.co/L1GYp0b/Red-Jackfruit.png" alt="Red-Jackfruit" border="0"></a>
@@ -125,20 +125,20 @@
                          </div>
                          <p class="text-sm font-medium text-gray-900">Rs. 480</p>
                        </div>
-                     </div>
+                     </div> --}}
               
 
                     {{-- new Product  --}}
-                    <div class="group relative">
+                    {{-- <div class="group relative">
                      
                       <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
- 
-                         {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
+  --}}
+                         {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br />
                          <a href="https://ibb.co/vzY5WC5"><img src="https://i.ibb.co/s3HS4pS/keepwell-traditional-rice-kuruluthuda-1.jpg" alt="keepwell-traditional-rice-kuruluthuda-1" border="0"></a>
                      </div>
-                     
+                      --}}
  
-                       <div class="mt-4 flex justify-between">
+                       {{-- <div class="mt-4 flex justify-between">
                          <div>
                            <h3 class="text-sm text-gray-700">
                              <a href="#">
@@ -151,41 +151,41 @@
                          <p class="text-sm font-medium text-gray-900">Rs.740</p>
                        </div>
                      </div>
-              
+               --}}
 
                     {{-- new Product  --}}
-                    <div class="group relative">
+                    {{-- <div class="group relative">
                      
                       <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                        <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a>
+                        <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a> --}}
                          {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
                     
-                        </div>
+                        {{-- </div>
                      
  
                        <div class="mt-4 flex justify-between">
                          <div>
                            <h3 class="text-sm text-gray-700">
                              <a href="#">
-                               <span aria-hidden="true" class="absolute inset-0"></span>
-                               Topwil Organic Coconut Amino Sauce 
+                               <span aria-hidden="true" class="absolute inset-0"></span> --}}
+                               {{-- Topwil Organic Coconut Amino Sauce 
                              </a>
                            </h3>
                            <p class="mt-1 text-sm text-gray-500">LiveLife</p>
                          </div>
                          <p class="text-sm font-medium text-gray-900">Rs.600</p>
                        </div>
-                     </div>
+                     </div> --}}
                     <!-- More products... -->
-                    <div class="group relative">
+                    {{-- <div class="group relative">
                      
                       <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
- 
+  --}}
                          {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                       <a href="https://ibb.co/7zDgg5W"><img src="https://i.ibb.co/PYyTTnh/Turmeric-Coconut-Latte-600x750.png" alt="Turmeric-Coconut-Latte-600x750" border="0"></a><a target='_blank' href='https://imgbb.com/'></a>
+                       {{-- <a href="https://ibb.co/7zDgg5W"><img src="https://i.ibb.co/PYyTTnh/Turmeric-Coconut-Latte-600x750.png" alt="Turmeric-Coconut-Latte-600x750" border="0"></a><a target='_blank' href='https://imgbb.com/'></a> --}}
                          
                          {{-- <a href="https://ibb.co/6NwLMjC"><img src="imageLink" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br /> --}}
-                     </div>
+                     {{-- </div>
                      
  
                        <div class="mt-4 flex justify-between">
@@ -200,14 +200,14 @@
                          </div>
                          <p class="text-sm font-medium text-gray-900">Rs.650</p>
                        </div>
-                     </div>
+                     </div>  --}}
 
-                        <div class="group relative">
+                        {{-- <div class="group relative">
                      
-                      <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                      <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"> --}}
  
                          {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                         <a href="https://ibb.co/rm3cRyd"><img src="https://i.ibb.co/VtxQcBw/Moringa-Coconut-Latte.png" alt="Moringa-Coconut-Latte" border="0"></a>
+                         {{-- <a href="https://ibb.co/rm3cRyd"><img src="https://i.ibb.co/VtxQcBw/Moringa-Coconut-Latte.png" alt="Moringa-Coconut-Latte" border="0"></a>
                      </div>
                      
  
@@ -223,9 +223,9 @@
                          </div>
                          <p class="text-sm font-medium text-gray-900">Rs.650</p>
                        </div>
-                     </div>
+                     </div> --}}
  
-                    {{-- Product 3  --}}
+                    {{-- Product 3 
                     <div class="group relative">
                       <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                         <a href="https://ibb.co/tDdQCHk"><img src="https://i.ibb.co/L1GYp0b/Red-Jackfruit.png" alt="Red-Jackfruit" border="0"></a>
@@ -252,7 +252,7 @@
 
              
               </div>
-         
+          --}}
          
         </div>
      
@@ -284,7 +284,7 @@
 
 
     
-    <section class="flex-col justify-center gap-8">
+    {{-- <section class="flex-col justify-center gap-8">
       <div class="container mx-auto mt-10 px-6 ">
        
           <div class="bg-[#F3ECDE] rounded-xl">
@@ -300,7 +300,7 @@
                       {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
                       {{-- <a href="https://ibb.co/6NwLMjC"><img src="imageLink" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br /> --}}
                     
-                    </div>
+                    {{-- </div>
                   
 
                     <div class="mt-4 flex justify-between">
@@ -315,11 +315,11 @@
                       </div>
                       <p class="text-sm font-medium text-gray-900">Rs.1550</p>
                     </div>
-                  </div>
+                  </div> --}}
 
 
                   {{-- new Product  --}}
-                  <div class="group relative">
+                  {{-- <div class="group relative">
                    
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/RYNzMb2/palmyrah-basket.webp" alt="palmyrah-basket" border="0"></a>
@@ -339,15 +339,15 @@
                        <p class="text-sm font-medium text-gray-900">Rs.2250</p>
                      </div>
                    </div>
-            
+             --}}
 
-                  {{-- new Product  --}}
+                  {{-- new Product 
                   <div class="group relative">
                    
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
 
                        {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                       <a href="https://imgbb.com/"><img src="https://i.ibb.co/V2nY3DL/spoon-fork-bamboo-506x.webp" alt="spoon-fork-bamboo-506x" border="0"></a>
+                       {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/V2nY3DL/spoon-fork-bamboo-506x.webp" alt="spoon-fork-bamboo-506x" border="0"></a>
                       </div>
                    
 
@@ -363,17 +363,17 @@
                        </div>
                        <p class="text-sm font-medium text-gray-900">Rs.340</p>
                      </div>
-                   </div>
-            
+                   </div> --}}
+          
 
-                  {{-- new Product  --}}
+                  {{-- new Product 
                   <div class="group relative">
                    
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
                       <a href="https://imgbb.com/"><img src="https://i.ibb.co/pz8hjd6/table-placemats-red-506x.webp" alt="table-placemats-red-506x" border="0"></a>
                       {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
                   
-                      </div>
+                      {{-- </div>
                    
 
                      <div class="mt-4 flex justify-between">
@@ -387,17 +387,17 @@
                          <p class="mt-1 text-sm text-gray-500">Bamagate</p>
                        </div>
                        <p class="text-sm font-medium text-gray-900">Rs.500</p>
-                     </div>
-                   </div>
+                     </div> --}}
+                   {{-- </div>  --}}
                   <!-- More products... -->
-                  <div class="group relative">
+                  {{-- <div class="group relative">
                    
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
 
                        {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                     <a href="https://imgbb.com/"><img src="https://i.ibb.co/VgLy1QW/seagrass-laundary-basket-506x.webp" alt="seagrass-laundary-basket-506x" border="0"></a>
+                     {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/VgLy1QW/seagrass-laundary-basket-506x.webp" alt="seagrass-laundary-basket-506x" border="0"></a> --}}
                        {{-- <a href="https://ibb.co/6NwLMjC"><img src="imageLink" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br /> --}}
-                   </div>
+                   {{-- </div>
                    
 
                      <div class="mt-4 flex justify-between">
@@ -405,9 +405,9 @@
                          <h3 class="text-sm text-gray-700">
                            <a href="#">
                              <span aria-hidden="true" class="absolute inset-0"></span>
-                             Seagrass ecofriendly laundry basket 
-                           </a>
-                         </h3>
+                             Seagrass ecofriendly laundry basket  --}}
+                           {{-- </a>  --}}
+                         {{-- </h3>
                          <p class="mt-1 text-sm text-gray-500">Bamagate</p>
                        </div>
                        <p class="text-sm font-medium text-gray-900">Rs.3400</p>
@@ -415,15 +415,15 @@
                    </div>
 
                       <div class="group relative">
-                   
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                    --}}
+                    {{-- <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
 
                        {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                       <a href="https://imgbb.com/"><img src="https://i.ibb.co/GxvTytv/seagrass-toe-basket-506x.webp" alt="seagrass-toe-basket-506x" border="0"></a>
-                       {{-- <a href="https://ibb.co/rm3cRyd"><img src="https://i.ibb.co/VtxQcBw/Moringa-Coconut-Latte.png" alt="Moringa-Coconut-Latte" border="0"></a> --}}
-                   </div>
+                       {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/GxvTytv/seagrass-toe-basket-506x.webp" alt="seagrass-toe-basket-506x" border="0"></a>
+                       <a href="https://ibb.co/rm3cRyd"><img src="https://i.ibb.co/VtxQcBw/Moringa-Coconut-Latte.png" alt="Moringa-Coconut-Latte" border="0"></a>
+                   </div> --}} 
                    
-
+{{-- 
                      <div class="mt-4 flex justify-between">
                        <div>
                          <h3 class="text-sm text-gray-700">
@@ -436,18 +436,18 @@
                        </div>
                        <p class="text-sm font-medium text-gray-900">Rs.1550</p>
                      </div>
-                   </div>
+                   </div> --}}
 
                     {{-- New product --}}
 
-                   <div class="group relative">
+                   {{-- <div class="group relative">
                    
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
+                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"> --}}
 
                        {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
                        {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/GxvTytv/seagrass-toe-basket-506x.webp" alt="seagrass-toe-basket-506x" border="0"></a> --}}
-                       <a href="https://imgbb.com/"><img src="https://i.ibb.co/127d0NR/381914974233443414-506x.webp" alt="381914974233443414-506x" border="0"></a>
-                       {{-- <a href="https://ibb.co/rm3cRyd"><img src="https://i.ibb.co/VtxQcBw/Moringa-Coconut-Latte.png" alt="Moringa-Coconut-Latte" border="0"></a> --}}
+                       {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/127d0NR/381914974233443414-506x.webp" alt="381914974233443414-506x" border="0"></a> --}}
+                       {{-- <a href="https://ibb.co/rm3cRyd"><img src="https://i.ibb.co/VtxQcBw/Moringa-Coconut-Latte.png" alt="Moringa-Coconut-Latte" border="0"></a>
                    </div>
                    
 
@@ -463,14 +463,14 @@
                        </div>
                        <p class="text-sm font-medium text-gray-900">Rs.3000</p>
                      </div>
-                   </div>
+                   </div> --}}
 
                   {{-- Product 3  --}}
-                  <div class="group relative">
+                  {{-- <div class="group relative">
                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                      <a href="https://imgbb.com/"><img src="https://i.ibb.co/GH14LdD/wooden-plate-10-inch-506x.webp" alt="wooden-plate-10-inch-506x" border="0"></a>
+                      <a href="https://imgbb.com/"><img src="https://i.ibb.co/GH14LdD/wooden-plate-10-inch-506x.webp" alt="wooden-plate-10-inch-506x" border="0"></a> --}}
                       {{-- <a href="https://ibb.co/tDdQCHk"><img src="https://i.ibb.co/L1GYp0b/Red-Jackfruit.png" alt="Red-Jackfruit" border="0"></a> --}}
-                    </div>
+                    {{-- </div>
                 
                     <div class="mt-4 flex justify-between">
                         <div>
@@ -485,9 +485,9 @@
                         <p class="text-sm font-medium text-gray-900"> Rs.1450</p>
                     </div>
                 </div>
-                </div>
+                </div> --}}
 
-                
+{{--                 
               </div>
 
 
@@ -495,11 +495,11 @@
             </div>
        
        
-      </div>
+      </div> --}}
    
       
      
-  </section>
+  {{-- </section> --}} 
     
 
     

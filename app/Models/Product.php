@@ -18,14 +18,15 @@ class Product extends Model implements HasMedia
         'description',
         'price', 
         'category_id',
-        'name', 
+        'brand_id',
         'slug', 
         'meta_title',
         'meta_description',
         'meta_keywords',
         'price',
         'order_by',
-        'status' 
+        'status' ,
+        'stock'
         ];
     //add an additional image field into this. 
 
@@ -37,18 +38,41 @@ class Product extends Model implements HasMedia
         $this->addMediaCollection('gallery');
     }
 
-    public function registerMediaConversions(Media $media = null): void
+    public function author()
     {
-        $this->addMediaConversion('250x250')
-        ->width(250)
-        ->height(250);
+        return $this->belongsTo(User::class, 'user_id');
+    }
 
-        $this->addMediaConversion('500x500')
-         ->width(500)
-        ->height(500);
-       
+    /**
+     * Get the brand associated with the Product
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    
+     /**
+      * Get the user that owns the Product
+      *
+      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
+      */
+     public function brand(): BelongsTo
+     {
+         return $this->belongsTo(Brand::class, 'brand_id', 'id');
      }
+    
 
+    // public function registerMediaConversions(Media $media = null): void
+    // {
+    //     $this->addMediaConversion('250x250')
+    //     ->width(250)
+    //     ->height(250);
+
+    //     $this->addMediaConversion('500x500')
+    //      ->width(500)
+    //     ->height(500);
+       
+    //  }
+
+   
 
 
 

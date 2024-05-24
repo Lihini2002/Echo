@@ -16,13 +16,11 @@ use App\Livewire\Counter;
 
 
 
-Route::get('/home', function () {
+Route::get('/', function () {
     return view('home');
-});
+})->name('home');
 
-Route::get('/users', function () {
-    return view('home');
-});
+
 
 
 Route::get('/counter', Counter::class)->name('counter');
