@@ -14,8 +14,9 @@
 
         <form method="POST" action="{{ route('login') }}>
             @csrf
+            
             <div>
-                <x-label for="email" value="{{ __('Email') }}" />
+                <x-label for= "email" value="{{ __('Email') }}" />
                 <x-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             </div>
 
@@ -40,7 +41,10 @@
 
                 <x-button class="ms-4">
                     {{ __('Log in') }}
+
                 </x-button>
+
+               
             </div>
         </form>
     </x-authentication-card>
