@@ -8,8 +8,16 @@
                 <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
                     {{ __('Home') }}
                 </x-nav-link>
-                <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">
-                    {{ __('Blog') }}
+                <x-nav-link href="{{ route('explore') }}" :active="request()->routeIs('explore')">
+                    {{ __('Explore') }}
+                </x-nav-link>
+
+                <x-nav-link href="{{ route('brands') }}" :active="request()->routeIs('brands')">
+                    {{ __('Brands') }}
+                </x-nav-link>
+
+                <x-nav-link href="{{ route('certifications') }}" :active="request()->routeIs('certifications')">
+                    {{ __('Certifications') }}
                 </x-nav-link>
                 {{-- Change the events here --}}
                 {{-- <x-nav-link href="{{ route('home') }}" :active="request()->routeIs('home')">

@@ -21,6 +21,19 @@ Route::get('/', function () {
 })->name('home');
 
 
+Route::get('/explore', function () {
+    return view('explore');
+})->name('explore');
+
+
+//Think if you need a controller here and if you do , you can pass one
+Route::get('/brands', function () {
+    return view('brands');
+})->name('brands');
+
+Route::get('/certifications', function () {
+    return view('certifications');
+})->name('certifications');
 
 
 Route::get('/counter', Counter::class)->name('counter');

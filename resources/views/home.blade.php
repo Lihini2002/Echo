@@ -18,10 +18,10 @@
                     @auth
                         <a href="{{ url('/dashboard') }}" class="font-semibold font text-black hover:text-gray-400  focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Dashboard</a>
                     @else
-                        <a href="{{ route('login') }}" class="font-semibold text-black hover:text-gray-900  dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a>
+                        {{-- <a href="{{ route('login') }}" class="font-semibold text-black hover:text-gray-900  dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Log in</a> --}}
 
                         @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 font-semibold text-black focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a>
+                            {{-- <a href="{{ route('register') }}" class="ml-4 font-semibold text-black focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">Register</a> --}}
                         @endif
                     @endauth
                 </div>
