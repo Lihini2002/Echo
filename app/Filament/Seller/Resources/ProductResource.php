@@ -91,7 +91,9 @@ class ProductResource extends Resource
                         //      return $brand ? $brand->name : 'Unknown Brand'; // Provide a default value
                         //  }),
 
-                TextColumn::make('brand_id'),
+        
+                //no need of this 
+                // TextColumn::make('brand_id'),
                 TextColumn::make('price')->money('LKR'),
 
 
@@ -102,6 +104,12 @@ class ProductResource extends Resource
                 //
 
             ])
+            ->modifyQueryUsing(function (Builder $query) { 
+                
+                    return $query->where('brand_id', auth()->id()); 
+                
+            }) 
+
             ->actions([
                 Tables\Actions\EditAction::make(),
             ])

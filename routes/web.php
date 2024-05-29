@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Livewire\Counter;
+use App\Http\Controllers\ProductController;
+use App\Http\Controllers\BrandController;
+ 
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -46,8 +49,12 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 
+    Route::get('/cart', function () {
+        return view('order.cart');
+    })->name('cart');
 
-
+    Route::get('/explore/{product}', [ProductController::class, 'show'])->name('products.show');
+    Route::get('/brands/{brand}', [BrandController::class, 'show'])->name('brands.show');
 
     Route::resource(
         'user', 
@@ -55,10 +62,14 @@ Route::middleware([
     );
     
 
-    Route::resource(
-        'product', 
-        \App\Http\Controllers\ProductController::class
-    );
+    
+    //Do we need a controller really?
+    // Route::get('/brands/{brand}', BrandProfile::class)->name('brand.profile');
+
+    // Route::resource(
+    //     'product', 
+    //     \App\Http\Controllers\ProductController::class
+    // );
 
     
 });

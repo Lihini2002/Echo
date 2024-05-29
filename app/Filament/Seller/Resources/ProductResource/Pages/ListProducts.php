@@ -15,5 +15,12 @@ class ListProducts extends ListRecords
         return [
             Actions\CreateAction::make(),
         ];
+
+        
     }
+
+    // public function query() {
+    //     return Product::query()
+    //         ->where('brand_id', auth()->user()->brand_id); // Assuming you have a brand_id on the Product model
+    //   }
 }

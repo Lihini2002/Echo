@@ -11,7 +11,7 @@ use Laravel\Fortify\TwoFactorAuthenticatable;
 use Laravel\Jetstream\HasProfilePhoto;
 use Laravel\Sanctum\HasApiTokens;
 use App\Enums\Role;
-
+use App\Models\Cart;
 class User extends Authenticatable
 {
     use HasApiTokens;
@@ -70,6 +70,11 @@ class User extends Authenticatable
     public function brand(): HasOne
     {
         return $this->hasOne(Brand::class, 'user_id', 'id');
+    }
+
+    public function carts(): \Illuminate\Database\Eloquent\Relations\HasMany
+    {
+        return $this->hasMany(Cart::class);
     }
 
 

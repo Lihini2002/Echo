@@ -25,15 +25,15 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $sellerId = Auth::id();
+        // $sellerId = Auth::id();
             
-        return view('admin.products.create', [
-            'product' => new Product(),
-            // 'categories' => CategoryController::whereNull('parent_id')->get()
-            'categories' => Category::getTopLevelCategories(),
-            'seller_id' => $sellerId
+        // return view('admin.products.create', [
+        //     'product' => new Product(),
+        //     // 'categories' => CategoryController::whereNull('parent_id')->get()
+        //     'categories' => Category::getTopLevelCategories(),
+        //     'seller_id' => $sellerId
 
-        ]);
+        // ]);
         
         //
     }
@@ -45,14 +45,14 @@ class ProductController extends Controller
    
 public function store(StoreProductRequest $request)
 {
-    $validated = $request->validated();
+    // $validated = $request->validated();
 
-    Product::create($validated);
+    // Product::create($validated);
 
-    // Add any additional logic as needed
+    // // Add any additional logic as needed
 
-    return redirect()->route('products')
-                     ->with('success', 'Product created successfully.');
+    // return redirect()->route('products')
+    //                  ->with('success', 'Product created successfully.');
 }
 
 
@@ -64,56 +64,33 @@ public function store(StoreProductRequest $request)
     /**
      * Display the specified resource.
      */
-    public function show(User $user)
+    public function show(Product $product)
     {
-        //
+        //Fpr products name it with a space. 
+        $quantity = 1; // Default quantity or fetched from somewhere
+        return view('products .show', compact('product', 'quantity'));
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(User $user)
+    public function edit(Product $product)
     {
-        $roles = [
-            1 => 'Super Administrator',
-            2 => 'Product and Brand Management',
-            3 => 'User Management',
-            4 => 'Content and Marketing Management',
-            5 => 'Analytics and Reporting Admin',
-            6 => 'Order and Fulfillment Management',
-            7 => 'Customer',
-        ];
-        
-       
-        return view('admin.user.form',compact('roles'), [
-            'user' => $user
-        ]);
+       //
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, User $user)
+    public function update(Request $request, Product $product)
     {
-        $validated = $request->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-            'role' => 'required'
-        ]);
-
-        $user->update($validated);
-
-        return redirect()->route('user.index')->with('success', 'User successfully updated!');
-        //
+     //
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(User $user)
-    {
-        $user->delete(); 
-        return redirect()-> route(user.index)->with ('success' , 'User was deleted');
-
+    public function destroy(Product $product)
+    {//
     }
 }

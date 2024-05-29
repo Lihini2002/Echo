@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
 
@@ -43,22 +44,21 @@ class Product extends Model implements HasMedia
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    /**
-     * Get the brand associated with the Product
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\HasOne
-     */
-    
-     /**
-      * Get the user that owns the Product
-      *
-      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
-      */
+  
      public function brand(): BelongsTo
      {
          return $this->belongsTo(Brand::class, 'brand_id', 'id');
      }
     
+     public function getRouteKeyName()
+    {
+    return 'slug'; // or the column you're using for the route
+    }
+
+    public function carts()
+{
+    return $this->belongsToMany(Cart::class)->using(CartProduct::class);
+}
 
     // public function registerMediaConversions(Media $media = null): void
     // {

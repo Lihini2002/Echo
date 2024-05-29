@@ -16,6 +16,9 @@
             {{-- bg-[#2B752A] - the green --}}
         </div>
 
+        <livewire:productlist />
+
+
        
     </div>
  

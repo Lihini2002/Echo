@@ -49,11 +49,11 @@ class Brand extends Model
         }
 
     
-        /**
-         * Get all of the comments for the Brand
-         *
-         * @return \Illuminate\Database\Eloquent\Relations\HasMany
-         */
+        // /**
+        //  * Get all of the comments for the Brand
+        //  *
+        //  * @return \Illuminate\Database\Eloquent\Relations\HasMany
+        //  */
         public function products(): HasMany
         {
             return $this->hasMany(Product::class, 'brand_id', 'id');

@@ -170,8 +170,10 @@ return [
         App\Providers\Filament\AdminPanelProvider::class,
         App\Providers\Filament\SellerPanelProvider::class,
         App\Providers\RouteServiceProvider::class,
+        App\Providers\VoltServiceProvider::class,
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
+        App\Providers\CartServiceProvider::class,
     ])->toArray(),
 
     /*
@@ -187,6 +189,7 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+        'Cart' => App\Facades\Cart::class,
     ])->toArray(),
 
 ];
