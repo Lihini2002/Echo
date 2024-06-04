@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Livewire\Counter;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\BrandController;
+use App\Http\Controllers\PaymentController;
  
 /*
 |--------------------------------------------------------------------------
@@ -53,6 +54,24 @@ Route::middleware([
         return view('order.cart');
     })->name('cart');
 
+
+    // in the cart, we show the checkout page 
+    // /checkout
+
+    // in the checkout page show stripe checkout or redirect to the stripe checkout API
+
+    // once the payment is completed, return the user to the thankyou page
+    // /cart/success
+
+    // /cart/failed
+
+    
+
+
+    
+
+
+
     Route::get('/explore/{product}', [ProductController::class, 'show'])->name('products.show');
     Route::get('/brands/{brand}', [BrandController::class, 'show'])->name('brands.show');
 
@@ -61,6 +80,8 @@ Route::middleware([
         \App\Http\Controllers\UserController::class
     );
     
+
+Route::post('/create-payment-intent', [PaymentController::class, 'createPaymentIntent']);
 
     
     //Do we need a controller really?

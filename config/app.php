@@ -174,6 +174,8 @@ return [
         App\Providers\FortifyServiceProvider::class,
         App\Providers\JetstreamServiceProvider::class,
         App\Providers\CartServiceProvider::class,
+        RealRashid\SweetAlert\SweetAlertServiceProvider::class,
+
     ])->toArray(),
 
     /*
@@ -189,7 +191,9 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
-        'Cart' => App\Facades\Cart::class,
+        // 'Cart' => App\Facades\Cart::class,
+        'Alert' => RealRashid\SweetAlert\Facades\Alert::class,
+
     ])->toArray(),
 
 ];

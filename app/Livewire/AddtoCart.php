@@ -4,6 +4,8 @@ namespace App\Livewire;
 use App\Models\Product;
 use App\Models\Cart;
 use Livewire\Component;
+use RealRashid\SweetAlert\Facades\Alert;
+
 
 class AddtoCart extends Component
 {
@@ -19,6 +21,9 @@ class AddtoCart extends Component
         //when you click the product we can give the product id
         $this->product = Product::find($productId);
         $this->getCart();
+        //  $this->push('scripts', asset('js/my-cart-script.js'));
+        // $this->dispatchBrowserEvent('cart-updated');
+        // $this->push('scripts', asset('js/my-alert-script.js'));
     } 
 
 
@@ -86,9 +91,15 @@ class AddtoCart extends Component
         $this->cart->total = $this->cart->products->sum(function ($product) {
             return $product->pivot->price * $product->pivot->quantity;
         });
+        
 
+        
         $this->cart->save();
-
+     
+        $this->dispatch('cart-updated');
+        session()->flash('success', ' item added successfully!');
+        // $this->dispatchBrowserEvent('name-updated', ['newName' => $value]);
+        // $this->dispatchBrowserEvent('showAlert', $message);
         $this->dispatch('cartRefresh');// Dispatch cart refresh event
     }
 

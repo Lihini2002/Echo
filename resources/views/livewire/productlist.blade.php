@@ -32,8 +32,8 @@ new class extends Component {
         $brand = findBrand($product);
      --}} 
                    
-                     <x-products.product-item wire:key="{{$product->id}}" :product="$product"/>
-            @endforeach
+     <x-products.product-item wire:key="{{$product->id}}" :product="$product"/>
+        @endforeach
 
         </div>
  </div>

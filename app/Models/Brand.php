@@ -59,22 +59,5 @@ class Brand extends Model
             return $this->hasMany(Product::class, 'brand_id', 'id');
         }
       
-        //counts the number of products associated with the brand.
-        // public function productsCount()
-        // {
-        //     return $this->products()->count();
-        // }
-
-
      
-
-
-
-    //what attributes does the brand have 
-    //and the relationships that it has 
-        //has one to one relationship with a user that it has one userid 
-        //has many products 
-        //also we need a seperate model for stocks. 
-        //need one to many relationship with products 
-
 }

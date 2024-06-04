@@ -87,18 +87,3 @@ class Product extends Model implements HasMedia
 
 
 
-//Things to do ;
-    //figure out what it is that you want to do 
-    //Actually add actual products to the table and make them show on the user page
-            //Okay so for this we could make the table first  
-            //Ui first 
-            //Then routing 
-    //Make the links for the admin to work for them to edit whatever the products 
-    //The focus is under products
-    //Somehow develop the part of the database diagram under products.
-    //Work with laravel media library and add this part under it. 
-    //ALl you have to do. 
-
-//Figure out what exactly you are going to do for the mobile app development 
-    //Develop a new applocation?
-    //
