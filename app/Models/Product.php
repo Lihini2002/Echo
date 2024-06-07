@@ -4,9 +4,12 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
-
+use App\Models\Product;
+use App\Models\Category;
 
 class Product extends Model implements HasMedia
 {
@@ -18,14 +21,15 @@ class Product extends Model implements HasMedia
         'description',
         'price', 
         'category_id',
-        'name', 
+        'brand_id',
         'slug', 
         'meta_title',
         'meta_description',
         'meta_keywords',
         'price',
         'order_by',
-        'status' 
+        'status' ,
+        'stock'
         ];
     //add an additional image field into this. 
 
@@ -37,18 +41,48 @@ class Product extends Model implements HasMedia
         $this->addMediaCollection('gallery');
     }
 
-    public function registerMediaConversions(Media $media = null): void
+    public function author()
     {
-        $this->addMediaConversion('250x250')
-        ->width(250)
-        ->height(250);
+        return $this->belongsTo(User::class, 'user_id');
+    }
 
-        $this->addMediaConversion('500x500')
-         ->width(500)
-        ->height(500);
-       
+  
+     public function brand(): BelongsTo
+     {
+         return $this->belongsTo(Brand::class, 'brand_id', 'id');
      }
+    
+     public function getRouteKeyName()
+    {
+    return 'slug'; // or the column you're using for the route
+    }
 
+    public function carts()
+{
+    return $this->belongsToMany(Cart::class)->using(CartProduct::class);
+}
+
+
+public function categories()
+ {
+    return $this->belongsToMany(Category::class);
+       
+       
+ }
+
+    // public function registerMediaConversions(Media $media = null): void
+    // {
+    //     $this->addMediaConversion('250x250')
+    //     ->width(250)
+    //     ->height(250);
+
+    //     $this->addMediaConversion('500x500')
+    //      ->width(500)
+    //     ->height(500);
+       
+    //  }
+
+   
 
 
 
@@ -63,18 +97,3 @@ class Product extends Model implements HasMedia
 
 
 
-//Things to do ;
-    //figure out what it is that you want to do 
-    //Actually add actual products to the table and make them show on the user page
-            //Okay so for this we could make the table first  
-            //Ui first 
-            //Then routing 
-    //Make the links for the admin to work for them to edit whatever the products 
-    //The focus is under products
-    //Somehow develop the part of the database diagram under products.
-    //Work with laravel media library and add this part under it. 
-    //ALl you have to do. 
-
-//Figure out what exactly you are going to do for the mobile app development 
-    //Develop a new applocation?
-    //

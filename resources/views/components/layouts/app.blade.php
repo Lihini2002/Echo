@@ -17,6 +17,7 @@
     <!-- Content section -->
     <div class="content">
         @yield('content')
+        @include('sweetalert::alert')
     </div>
 
     <!-- Common footer -->

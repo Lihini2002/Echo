@@ -5,6 +5,8 @@
 @section('title', 'Admin Dashboard')
 
 @section('content')
+@include('sweetalert::alert')
+
     <!-- Additional content or customization for administrators -->
     <div>
         <p>Welcome, Admin!</p>
