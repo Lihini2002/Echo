@@ -15,6 +15,7 @@ class CategoryList extends Component
     }
 
     
+  
 
     public function render()
     {

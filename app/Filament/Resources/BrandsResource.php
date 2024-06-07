@@ -6,6 +6,7 @@ use App\Filament\Resources\BrandsResource\Pages;
 use App\Filament\Resources\BrandsResource\RelationManagers;
 use App\Models\Brand;
 use App\Models\Category;
+use App\Models\Certifications;
 use App\Models\User;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -18,7 +19,8 @@ use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\Fieldset;
 use Filament\Tables\Columns\ImageColumn;
-
+use Filament\Forms\Components\SpatieMediaLibraryFileUpload;
+use Filament\Tables\Columns\SpatieMediaLibraryImageColumn;
 
 
 use Filament\Forms\Components\FileUpload;
@@ -59,7 +61,7 @@ class BrandsResource extends Resource
                 //this is a many to many relationship that needs a pivot table
                 //should we implement this later?
               
-                FileUpload::make('logo'),
+                // FileUpload::make('logo'),
                 Textarea::make('description')->columnSpan(2), 
                 Select::make('user_id')
                 ->options(
@@ -70,6 +72,9 @@ class BrandsResource extends Resource
                 ->options(
                     Category::getTopLevelCategories()->pluck('name', 'id')
                 ),
+
+
+                SpatieMediaLibraryFileUpload::make('image')->collection('brand_images'),
                 //add a feature to add the sustainablility certificates 
 
                 //add a section to add login infomration 
@@ -83,7 +88,10 @@ class BrandsResource extends Resource
                 //         ->searchable()
                 //         ->required()
                     
-
+                Select::make('certifications')
+                ->multiple()
+                ->relationship('certifications', 'name')
+                ->options(Certifications::all()->pluck('name', 'id'))
                     
 
                 ]);
@@ -98,9 +106,10 @@ class BrandsResource extends Resource
                 //Brand name 
                 //BrandLogo
                 //Category 
+                SpatieMediaLibraryImageColumn::make('image')->collection('brand_images')->conversion('thumb'),
                 TextColumn::make('name'), 
-                ImageColumn::make('logo'),
-                TextColumn::make('category'),
+                // ImageColumn::make('logo'),
+                TextColumn::make('category_id'),
                 TextColumn::make('productsCount'), 
 
             ])
@@ -109,6 +118,7 @@ class BrandsResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

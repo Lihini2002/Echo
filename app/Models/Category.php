@@ -4,6 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
+use App\Models\Product;
+use App\Models\Certifications;
 
 class Category extends Model
 {
@@ -20,16 +23,14 @@ class Category extends Model
         'meta_keywords',
     ];
 
-    public function products(): \Illuminate\Database\Eloquent\Relations\HasMany
+    public function products()
     {
-        return $this->hasMany(
-            Product::class,
-            'category_id'
-            
-        );
+        return $this->belongsToMany(Product::class);
+    
     }
 
 
+ 
      
         //  * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
         //  */
@@ -50,6 +51,7 @@ class Category extends Model
     return $this->belongsTo(Category::class, 'parent_id');
     }
 
+    
 
     public static function getTopLevelCategories()
     {

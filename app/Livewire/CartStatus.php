@@ -4,6 +4,7 @@ namespace App\Livewire;
 use App\Models\Cart;
 use App\Models\Product;
 use Livewire\Component;
+use Illuminate\Support\Facades\Http;
 
 class CartStatus extends Component
 
@@ -11,6 +12,7 @@ class CartStatus extends Component
 {
     public $cart;
     public $showCart = true;
+    // public $eachProductTotal; 
     
 
     //from the carts under the users , get the first cart which is signed as unpaid. and make sure the user is auth
@@ -42,6 +44,27 @@ class CartStatus extends Component
         }
     }
 
+            public function eachProductTotal($product)
+            {
+            return $product->pivot->price * $product->pivot->quantity;
+             
+            }
+
+    public function decrement(Product $product)
+    {
+        $product->pivot->quantity = max(1, --$product->quantity); // Decrement and limit to minimum 1
+    }
+
+    public function increment(Product $product)
+    {
+
+        //implement this along with stocks later 
+        //since 
+        //  $stock = $this->product->stock->first();
+        $product->pivot->quantity = min($product->stock, ++$product->pivot->quantity); // Increment and limit to stock
+    }
+
+
     public function refreshCart()
     {
         if (auth()->user()) {
@@ -49,6 +72,36 @@ class CartStatus extends Component
             $this->showCart = true;
         }
     }
+
+
+
+    //checkout function 
+    // public function checkout()
+    // {
+    //     // Send the cart data to the server to create the checkout session
+    //     $response = Http::post(route('checkout.session'), $this->cart);
+
+    //     // Redirect to the Stripe checkout session URL
+    //     return redirect($response->header('Location'));
+    // }
+
+   
+        // Send the cart data to the server to create the checkout session
+
+        // public function checkout()
+        // {
+    
+        //     $response = Http::post(route('checkout.session'), ['cart' => $this->cart]);
+    
+        //     return redirect($response->json()['url']);
+        // }
+    
+    
+        public function checkout()
+        {
+            // Trigger the checkout process by redirecting to the checkout route
+            return redirect()->route('checkout');
+        }
 
 
     public function render()

@@ -7,7 +7,7 @@
     </div>
     
     <div>
-        <p class="font-bold text-xl font-sans-serif ">Welcome Back!</p>
+        <p class="font-extrabold text-4xl font-sans-serif capitalize text-[#0360B6] ">Log In</p>
     </div>
 
 

@@ -17,6 +17,8 @@
         </div>
 
         <livewire:productlist />
+        {{-- @livewire('product-list', ['activeCategoryId' => $activeCategoryId])/> --}}
+
 
 
        

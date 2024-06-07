@@ -7,6 +7,7 @@ use App\Filament\Seller\Resources\ProductResource\RelationManagers;
 use App\Models\Product;
 use App\Models\Category;
 use App\Models\Brand;
+use App\Models\Certifications;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
@@ -43,12 +44,21 @@ class ProductResource extends Resource
 
                 // TextInput::make('price')->money('LKR'),
                 TextInput::make('price')->numeric()->inputMode('decimal')  ->prefix('RS.'),
-                Select::make('category_id')
+                Select::make('category_id') //main category
                 ->label('Category')
                 ->options(Category::all()->pluck('name', 'id'))
                 ->searchable(),
-                TextInput::make('stock')->numeric()
 
+                TextInput::make('stock')->numeric(),
+                // categories
+                Select::make('categories')
+                ->multiple()
+                ->relationship('categories', 'name')
+                ->options(Category::all()->pluck('name', 'id')),
+                
+               
+                
+                
 
                 //store this in the database and automatically lower it when sales happen
 
@@ -91,7 +101,7 @@ class ProductResource extends Resource
                         //      return $brand ? $brand->name : 'Unknown Brand'; // Provide a default value
                         //  }),
 
-        
+               
                 //no need of this 
                 // TextColumn::make('brand_id'),
                 TextColumn::make('price')->money('LKR'),

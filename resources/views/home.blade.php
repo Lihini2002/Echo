@@ -1,11 +1,10 @@
 
-
 <x-app-layout>
-    <div
+    <div>
 
     {{-- <section class="bg-white dark:bg-gray-900">  has both for dark and light mode--}}
     <section class="bg-[#FFCF8F]">
-        <div class="bg-[#FFCF8F] grid max-w-screen-xl px-10 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+        <div class="bg-[#FFCF8F] grid max-w-screen-xl px-10 py-8 mx-auto lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12 ">
             <div class="mr-auto place-self-center lg:col-span-7 text-center lg:text-left ">
                 <h1 class="max-w-2xl mb-4 text-4xl font-extrabold tracking-tight leading-none md:text-5xl xl:text-6xl text-black">All in one marketplace for sustainable shopping</h1>
                 <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8 md:text-lg lg:text-xl dark:text-[#736f6f]">From bamboo toothbrushes to organically grown Seeni Banana ,Echo provides Sri Lankans an eco-friendly alternative way to shop .</p>
@@ -41,8 +40,123 @@
         </div>
     </section>
 
+    <section class=" pb-9  text-center  px-6 w-[100%] bg-[#FFCF8F]">
+      <div class="flex justify-center mx-20py-8 px-8 bg-[#ffdcae] rounded-md ">
+          <div class="rounded-xl">
+              <div class="max-w-[700px] text-center">
+                  <h2 class="mb-6 text-center text-3xl font-extrabold uppercase pt-8">
+                    Fighting Climate Change
+                  </h2>
+                  <p class="mb-16 text-[#403f3f] text-MD font-medium">
+                    The environmental cost of our resource intensive lifestyles is frightening. <BR>
+                    Some even say the damage is irreversible. <BR>
+                    Some may not even care about the repercussions. And then there are some, like us, who believe that even the little choices we make today could lead to greater things in the future. 
+                  </p>
+                </div>
+          </div>
+       
+          
+      </div>
+          
     
-    <section class="mb-15 text-center  px-6 ">
+       
+    
+    
+        
+  
+    
+    </section>
+
+    <section class="">
+      <div class="bg-gray-200 w-full flex justify-center items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:py-24 lg:px-8 w-full">
+          <div class="flex flex-col md:flex-row items-center md:items-start gap-20 justify-between">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-2 mt-4 order-2 md:order-1">
+              <div class=" overflow-hidden shadow sm:rounded-lg  w-80 h-40">
+                <div class="px-6 py-8 sm:p-10 bg-[#0360B6] ">
+                  <dl>
+                    <dt class="text-lg leading-5 font-medium text-white truncate">Microplastics</dt>
+                    <dd class="mt-5 text-5xl leading-9 font-semibold text-[#f1f2f4]">269 K</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class=" overflow-hidden shadow sm:rounded-lg bg-[#0360B6] w-80 h-40 ml-8">
+                <div class="px-6 py-8 sm:p-10">
+                  <dl>
+                    <dt class="text-lg leading-5 font-medium text-white truncate">Industrial Carbon Emissions</dt>
+                    <dd class="mt-5 text-5xl leading-9 font-semibold text-[#f1f2f4]">37.15 B</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class=" overflow-hidden shadow sm:rounded-lg bg-[#0360B6] w-80 h-40">
+                <div class="px-6 py-8 sm:p-10">
+                  <dl>
+                    <dt class="text-lg leading-5 font-medium text-gray-200 truncate">Non ethical labour</dt>
+                    <dd class="mt-5 text-5xl leading-9 font-semibold text-[#f1f2f4]">25 M</dd>
+                  </dl>
+                </div>
+              </div>
+              <div class=" overflow-hidden shadow sm:rounded-lg bg-[#0360B6] w-80 h-40 ml-8">
+                <div class="px-6 py-8 sm:p-10">
+                  <dl>
+                    <dt class="text-lg leading-5 font-medium text-gray-200 truncate">Yearly Municipal Waste</dt>
+                    <dd class="mt-5 text-5xl leading-9 font-semibold text-[#f1f2f4]">2.01 B</dd>
+                  </dl>
+                </div>
+              </div>
+            </div>
+            <div class="order-1 md:order-2  text-right">
+              <h1 class="max-w-2xl mb-4 ml-2 text-5xl font-extrabold tracking-tight text-black leading-none md:text-5xl xl:text-5xl">Making it convenient to love the planet</h1>
+              <p class="text-2xl">It starts with you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+
+
+
+    <section class="text-center bg-[#0360B6] flex flex-col justify-center px-20">
+
+
+            {{-- The Heading --}}
+            <div>
+              <h1 class="mb-4 text-3xl font-extrabold leading-none tracking-tight text-[#FFCF8F] md:text-4xl lg:text-5xl pt-20">Ending the age of meaningless consumerism</h1>
+              <p class="mb-6 text-lg font-light font-sans-serif text-gray-200 lg:text-2xl sm:px-16 xl:px-48 ">sustainable shopping at your doorstep</p>
+              
+            </div>
+          
+            <div class="flex justify-center gap-10 my-10 pb-20 pt-10">
+              
+              <div class="block max-w-sm p-6 bg-[#d2e2f3] rounded-md hover:bg-gray-100 w-[20em] ">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Sustainability</h5>
+                <p class="font-normal text-lg text-gray-700 ">Products optimum for the society, economy and the environment </p>
+              </div>
+  
+              <div class="block max-w-sm p-6 bg-[#d2e2f3] rounded-md hover:bg-gray-100 w-[20em] ">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Quality</h5>
+                <p class="font-normal text-gray-700 text-lg ">Products that will last you a lifetime ,made with love and care</p>
+              </div>
+
+              <div class="block max-w-sm p-6 bg-[#d2e2f3] rounded-md hover:bg-gray-100 w-[20em] ">
+
+                <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">Cost</h5>
+                <p class="font-normal text-gray-700  text-lg">Being sustainable can also be afforable and in your budget</p>
+              </div>
+            </div>
+
+
+            
+
+    </section>
+
+
+    
+    {{-- <section class="mb-15 text-center  px-6 ">
         <div class="flex justify-center bg-[#F3ECDE] mx-20 py-8 px-8 rounded-lg">
             <div class="rounded-xl">
                 <div class="max-w-[700px] text-center">
@@ -57,208 +171,18 @@
          
             
         </div>
-            
+ 
       
-         
-      
-      
-          
-    
-      
-      </section>
+      </section> --}}
 
 
-      {{-- The product catalogue start --}}
 
-      {{-- <section class="flex-col justify-center gap-8">
-        <div class="container mx-auto mt-10 px-6 ">
-          <h2 class="text-3xl font-extrabold tracking-tight pl-2 uppercase py-5 text-gray-900 text-left">Featured Products</h2>
-         
-            <div class="bg-[#F3ECDE] rounded-xl">
-              <h2 class="text-2xl w-[100%] bg-[#306B34] rounded-md text-center uppercase tracking-tight py-5 pl-10 text-[#c8d5cf] text-left">Food and Beverage</h2>
-                <div class="mx-auto max-w-2xl px-4 pb-3 pt-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                
-              
-                  <div class="mt-1 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                    <div class="group relative">
-                     
-                     <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-
-                        {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                        {{-- <a href="https://ibb.co/J5TTTPm"><img src="https://i.ibb.co/bzVVVnQ/Coconut-Cheese.jpg" alt="Coconut-Cheese" border="0"></a> --}}
-                        {{-- <a href="https://ibb.co/6NwLMjC"><img src="imageLink" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br /> --}}
-                    {{-- </div> --}}
-                    
-{{-- 
-                      <div class="mt-4 flex justify-between">
-                        <div>
-                          <h3 class="text-sm text-gray-700">
-                            <a href="#">
-                              <span aria-hidden="true" class="absolute inset-0"></span>
-                              Organic Dairy Free Coconut Cheese 200g
-                            </a>
-                          </h3>
-                          <p class="mt-1 text-sm text-gray-500">Livelife</p>
-                        </div>
-                        <p class="text-sm font-medium text-gray-900">Rs.500</p>
-                      </div>
-                    </div> --}}
-
-
-                    {{-- new Product  --}}
-                    {{-- <div class="group relative">
-                     
-                      <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                        <a href="https://ibb.co/tDdQCHk"><img src="https://i.ibb.co/L1GYp0b/Red-Jackfruit.png" alt="Red-Jackfruit" border="0"></a>
-                     </div>
-                     
- 
-                       <div class="mt-4 flex justify-between">
-                         <div>
-                           <h3 class="text-sm text-gray-700">
-                             <a href="#">
-                               <span aria-hidden="true" class="absolute inset-0"></span>
-                               Organic Sweet & Smoky Jackfruit 
-                             </a>
-                           </h3>
-                           <p class="mt-1 text-sm text-gray-500">LiveLife</p>
-                         </div>
-                         <p class="text-sm font-medium text-gray-900">Rs. 480</p>
-                       </div>
-                     </div> --}}
-              
-
-                    {{-- new Product  --}}
-                    {{-- <div class="group relative">
-                     
-                      <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-  --}}
-                         {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br />
-                         <a href="https://ibb.co/vzY5WC5"><img src="https://i.ibb.co/s3HS4pS/keepwell-traditional-rice-kuruluthuda-1.jpg" alt="keepwell-traditional-rice-kuruluthuda-1" border="0"></a>
-                     </div>
-                      --}}
- 
-                       {{-- <div class="mt-4 flex justify-between">
-                         <div>
-                           <h3 class="text-sm text-gray-700">
-                             <a href="#">
-                               <span aria-hidden="true" class="absolute inset-0"></span>
-                               Keepwell Srilankan Traditional Rice
-                             </a>
-                           </h3>
-                           <p class="mt-1 text-sm text-gray-500">LiveLife</p>
-                         </div>
-                         <p class="text-sm font-medium text-gray-900">Rs.740</p>
-                       </div>
-                     </div>
-               --}}
-
-                    {{-- new Product  --}}
-                    {{-- <div class="group relative">
-                     
-                      <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                        <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a> --}}
-                         {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                    
-                        {{-- </div>
-                     
- 
-                       <div class="mt-4 flex justify-between">
-                         <div>
-                           <h3 class="text-sm text-gray-700">
-                             <a href="#">
-                               <span aria-hidden="true" class="absolute inset-0"></span> --}}
-                               {{-- Topwil Organic Coconut Amino Sauce 
-                             </a>
-                           </h3>
-                           <p class="mt-1 text-sm text-gray-500">LiveLife</p>
-                         </div>
-                         <p class="text-sm font-medium text-gray-900">Rs.600</p>
-                       </div>
-                     </div> --}}
-                    <!-- More products... -->
-                    {{-- <div class="group relative">
-                     
-                      <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-  --}}
-                         {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                       {{-- <a href="https://ibb.co/7zDgg5W"><img src="https://i.ibb.co/PYyTTnh/Turmeric-Coconut-Latte-600x750.png" alt="Turmeric-Coconut-Latte-600x750" border="0"></a><a target='_blank' href='https://imgbb.com/'></a> --}}
-                         
-                         {{-- <a href="https://ibb.co/6NwLMjC"><img src="imageLink" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br /> --}}
-                     {{-- </div>
-                     
- 
-                       <div class="mt-4 flex justify-between">
-                         <div>
-                           <h3 class="text-sm text-gray-700">
-                             <a href="#">
-                               <span aria-hidden="true" class="absolute inset-0"></span>
-                               Topwil Nutrition Organic Turmeric Coconut Latte
-                             </a>
-                           </h3>
-                           <p class="mt-1 text-sm text-gray-500">Livelife</p>
-                         </div>
-                         <p class="text-sm font-medium text-gray-900">Rs.650</p>
-                       </div>
-                     </div>  --}}
-
-                        {{-- <div class="group relative">
-                     
-                      <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"> --}}
- 
-                         {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                         {{-- <a href="https://ibb.co/rm3cRyd"><img src="https://i.ibb.co/VtxQcBw/Moringa-Coconut-Latte.png" alt="Moringa-Coconut-Latte" border="0"></a>
-                     </div>
-                     
- 
-                       <div class="mt-4 flex justify-between">
-                         <div>
-                           <h3 class="text-sm text-gray-700">
-                             <a href="#">
-                               <span aria-hidden="true" class="absolute inset-0"></span>
-                               Topwil Nutrition Organic Moringa Coconut Latte
-                             </a>
-                           </h3>
-                           <p class="mt-1 text-sm text-gray-500">Livelife</p>
-                         </div>
-                         <p class="text-sm font-medium text-gray-900">Rs.650</p>
-                       </div>
-                     </div> --}}
- 
-                    {{-- Product 3 
-                    <div class="group relative">
-                      <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                        <a href="https://ibb.co/tDdQCHk"><img src="https://i.ibb.co/L1GYp0b/Red-Jackfruit.png" alt="Red-Jackfruit" border="0"></a>
-                      </div>
-                  
-                      <div class="mt-4 flex justify-between">
-                          <div>
-                              <h3 class="text-sm text-gray-700">
-                                  <a href="#">
-                                      <span aria-hidden="true" class="absolute inset-0"></span>
-                                      Organic Red Curry Jackfruit
-                                  </a>
-                              </h3>
-                              <p class="mt-1 text-sm text-gray-500">LiveLife</p>
-                          </div>
-                          <p class="text-sm font-medium text-gray-900"> Rs. 480</p>
-                      </div>
-                  </div>
-                  </div>
-
-                  
-                </div>
-
-
-             
-              </div>
-          --}}
          
         </div>
      
         
        
-    </section>
+  
 
 
 
@@ -270,237 +194,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-    {{-- <section class="flex-col justify-center gap-8">
-      <div class="container mx-auto mt-10 px-6 ">
-       
-          <div class="bg-[#F3ECDE] rounded-xl">
-            <h2 class="text-2xl w-[100%] bg-[#306B34] rounded-md text-center uppercase tracking-tight py-5 pl-10 text-[#c8d5cf] text-left"> Household Items</h2>
-              <div class="mx-auto max-w-2xl px-4 pb-3 pt-4 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-              
-            
-                <div class="mt-1 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
-                  <div class="group relative">
-                   
-                   <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                    <a href="https://imgbb.com/"><img src="https://i.ibb.co/KxBQQG7/holder-coconut-shell-506x.webp" alt="holder-coconut-shell-506x" border="0"></a>
-                      {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                      {{-- <a href="https://ibb.co/6NwLMjC"><img src="imageLink" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br /> --}}
-                    
-                    {{-- </div>
-                  
-
-                    <div class="mt-4 flex justify-between">
-                      <div>
-                        <h3 class="text-sm text-gray-700">
-                          <a href="#">
-                            <span aria-hidden="true" class="absolute inset-0"></span>
-                            Candle holder coconut shell
-                          </a>
-                        </h3>
-                        <p class="mt-1 text-sm text-gray-500">Bamagate</p>
-                      </div>
-                      <p class="text-sm font-medium text-gray-900">Rs.1550</p>
-                    </div>
-                  </div> --}}
-
-
-                  {{-- new Product  --}}
-                  {{-- <div class="group relative">
-                   
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                   <a href="https://imgbb.com/"><img src="https://i.ibb.co/RYNzMb2/palmyrah-basket.webp" alt="palmyrah-basket" border="0"></a>
-                    </div>
-                   
-
-                     <div class="mt-4 flex justify-between">
-                       <div>
-                         <h3 class="text-sm text-gray-700">
-                           <a href="#">
-                             <span aria-hidden="true" class="absolute inset-0"></span>
-                             Palmyrah Leaf Storage Basket 
-                           </a>
-                         </h3>
-                         <p class="mt-1 text-sm text-gray-500">Bamagate</p>
-                       </div>
-                       <p class="text-sm font-medium text-gray-900">Rs.2250</p>
-                     </div>
-                   </div>
-             --}}
-
-                  {{-- new Product 
-                  <div class="group relative">
-                   
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-
-                       {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                       {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/V2nY3DL/spoon-fork-bamboo-506x.webp" alt="spoon-fork-bamboo-506x" border="0"></a>
-                      </div>
-                   
-
-                     <div class="mt-4 flex justify-between">
-                       <div>
-                         <h3 class="text-sm text-gray-700">
-                           <a href="#">
-                             <span aria-hidden="true" class="absolute inset-0"></span>
-                             Handmade Bamboo Cutlery set
-                           </a>
-                         </h3>
-                         <p class="mt-1 text-sm text-gray-500">Bamagate</p>
-                       </div>
-                       <p class="text-sm font-medium text-gray-900">Rs.340</p>
-                     </div>
-                   </div> --}}
-          
-
-                  {{-- new Product 
-                  <div class="group relative">
-                   
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                      <a href="https://imgbb.com/"><img src="https://i.ibb.co/pz8hjd6/table-placemats-red-506x.webp" alt="table-placemats-red-506x" border="0"></a>
-                      {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                  
-                      {{-- </div>
-                   
-
-                     <div class="mt-4 flex justify-between">
-                       <div>
-                         <h3 class="text-sm text-gray-700">
-                           <a href="#">
-                             <span aria-hidden="true" class="absolute inset-0"></span>
-                             Recycled paper placemat Red
-                           </a>
-                         </h3>
-                         <p class="mt-1 text-sm text-gray-500">Bamagate</p>
-                       </div>
-                       <p class="text-sm font-medium text-gray-900">Rs.500</p>
-                     </div> --}}
-                   {{-- </div>  --}}
-                  <!-- More products... -->
-                  {{-- <div class="group relative">
-                   
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-
-                       {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                     {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/VgLy1QW/seagrass-laundary-basket-506x.webp" alt="seagrass-laundary-basket-506x" border="0"></a> --}}
-                       {{-- <a href="https://ibb.co/6NwLMjC"><img src="imageLink" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'></a><br /> --}}
-                   {{-- </div>
-                   
-
-                     <div class="mt-4 flex justify-between">
-                       <div>
-                         <h3 class="text-sm text-gray-700">
-                           <a href="#">
-                             <span aria-hidden="true" class="absolute inset-0"></span>
-                             Seagrass ecofriendly laundry basket  --}}
-                           {{-- </a>  --}}
-                         {{-- </h3>
-                         <p class="mt-1 text-sm text-gray-500">Bamagate</p>
-                       </div>
-                       <p class="text-sm font-medium text-gray-900">Rs.3400</p>
-                     </div>
-                   </div>
-
-                      <div class="group relative">
-                    --}}
-                    {{-- <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-
-                       {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                       {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/GxvTytv/seagrass-toe-basket-506x.webp" alt="seagrass-toe-basket-506x" border="0"></a>
-                       <a href="https://ibb.co/rm3cRyd"><img src="https://i.ibb.co/VtxQcBw/Moringa-Coconut-Latte.png" alt="Moringa-Coconut-Latte" border="0"></a>
-                   </div> --}} 
-                   
-{{-- 
-                     <div class="mt-4 flex justify-between">
-                       <div>
-                         <h3 class="text-sm text-gray-700">
-                           <a href="#">
-                             <span aria-hidden="true" class="absolute inset-0"></span>
-                          Handmade seagrass tote bag 
-                           </a>
-                         </h3>
-                         <p class="mt-1 text-sm text-gray-500">Bamagate</p>
-                       </div>
-                       <p class="text-sm font-medium text-gray-900">Rs.1550</p>
-                     </div>
-                   </div> --}}
-
-                    {{-- New product --}}
-
-                   {{-- <div class="group relative">
-                   
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80"> --}}
-
-                       {{-- <a href="https://ibb.co/6NwLMjC"><img src="https://i.ibb.co/hC9w63z/Topwil-Amino-Sauce-Smoky-BBQ.png" alt="Topwil-Amino-Sauce-Smoky-BBQ" border="0"></a><br /><a target='_blank' href='https://imgbb.com/'>make image url</a><br /> --}}
-                       {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/GxvTytv/seagrass-toe-basket-506x.webp" alt="seagrass-toe-basket-506x" border="0"></a> --}}
-                       {{-- <a href="https://imgbb.com/"><img src="https://i.ibb.co/127d0NR/381914974233443414-506x.webp" alt="381914974233443414-506x" border="0"></a> --}}
-                       {{-- <a href="https://ibb.co/rm3cRyd"><img src="https://i.ibb.co/VtxQcBw/Moringa-Coconut-Latte.png" alt="Moringa-Coconut-Latte" border="0"></a>
-                   </div>
-                   
-
-                     <div class="mt-4 flex justify-between">
-                       <div>
-                         <h3 class="text-sm text-gray-700">
-                           <a href="#">
-                             <span aria-hidden="true" class="absolute inset-0"></span>
-                         Bamboo Wooden Tissue Box
-                           </a>
-                         </h3>
-                         <p class="mt-1 text-sm text-gray-500">Bamagate</p>
-                       </div>
-                       <p class="text-sm font-medium text-gray-900">Rs.3000</p>
-                     </div>
-                   </div> --}}
-
-                  {{-- Product 3  --}}
-                  {{-- <div class="group relative">
-                    <div class="aspect-w-1 aspect-h-1 w-full overflow-hidden rounded-md bg-gray-200 lg:aspect-none group-hover:opacity-75 lg:h-80">
-                      <a href="https://imgbb.com/"><img src="https://i.ibb.co/GH14LdD/wooden-plate-10-inch-506x.webp" alt="wooden-plate-10-inch-506x" border="0"></a> --}}
-                      {{-- <a href="https://ibb.co/tDdQCHk"><img src="https://i.ibb.co/L1GYp0b/Red-Jackfruit.png" alt="Red-Jackfruit" border="0"></a> --}}
-                    {{-- </div>
-                
-                    <div class="mt-4 flex justify-between">
-                        <div>
-                            <h3 class="text-sm text-gray-700">
-                                <a href="#">
-                                    <span aria-hidden="true" class="absolute inset-0"></span>
-                                    Natural Mahogany WoodPlate
-                                </a>
-                            </h3>
-                            <p class="mt-1 text-sm text-gray-500">Bamagate</p>
-                        </div>
-                        <p class="text-sm font-medium text-gray-900"> Rs.1450</p>
-                    </div>
-                </div>
-                </div> --}}
-
-{{--                 
-              </div>
-
-
-           
-            </div>
-       
-       
-      </div> --}}
-   
-      
-     
-  {{-- </section> --}} 
-    
 
     
 </div>

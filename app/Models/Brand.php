@@ -6,20 +6,27 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Database\Eloquent\Relations\HasMany;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use App\Models\Category;
+use App\Models\Certifications;
+use Spatie\MediaLibrary\HasMedia;
+use Spatie\MediaLibrary\InteractsWithMedia;
+
 use App\Models\User;
 
 
-class Brand extends Model
+class Brand extends Model implements HasMedia
 {
     use HasFactory;
+    use InteractsWithMedia;
+
     protected $fillable = [
         'name', 
         'description',
         'location', 
         'subtitle',
         'slug', 
-        'logo_URL',
+        // 'logo_URL',
         'category_id',
         'user_id'
         
@@ -47,6 +54,27 @@ class Brand extends Model
         {
          return $this->belongsToMany(Category::class);
         }
+
+        public function certifications()
+        {
+            return $this->belongsToMany(Certifications::class);
+        
+        }
+
+        public function registerMediaCollections(): void
+        {
+        // Add a single file media collection for the featured image
+        $this->addMediaCollection('featured_image')
+            ->singleFile();
+
+        // Add a multiple file media collection for the gallery
+        $this->addMediaCollection('gallery');
+        }
+    
+    //     public function certifications()
+    //      {
+    //     return $this->belongsToMany(Certification::class, 'brand_certification', 'brand_id', 'certification_id');
+    // }
 
     
         // /**

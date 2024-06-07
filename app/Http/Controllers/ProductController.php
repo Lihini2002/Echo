@@ -93,4 +93,7 @@ public function store(StoreProductRequest $request)
     public function destroy(Product $product)
     {//
     }
+
+
+    
 }

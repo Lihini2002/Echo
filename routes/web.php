@@ -19,6 +19,8 @@ use App\Http\Controllers\PaymentController;
 
 
 
+Route::post('/checkout', [PaymentController::class, 'checkout'])->name('checkout');
+Route::get('explore/search', [ProductController::class, 'search'])->name('products.search');
 
 Route::get('/', function () {
     return view('home');
@@ -62,11 +64,21 @@ Route::middleware([
 
     // once the payment is completed, return the user to the thankyou page
     // /cart/success
-
+ 
     // /cart/failed
 
     
+    // Route::get('/checkout/success', function () {
+    //     return view('checkout.success');
+    // })->name('checkout.success');
+    
+    // Route::get('/checkout/cancel', function () {
+    //     return view('checkout.cancel');
+    // })->name('checkout.cancel');
+    
 
+    Route::get('/checkout/success', [PaymentController::class, 'success'])->name('checkout.success');
+    Route::get('/checkout/cancel', [PaymentController::class, 'cancel'])->name('checkout.cancel');
 
     
 
@@ -81,7 +93,17 @@ Route::middleware([
     );
     
 
-Route::post('/create-payment-intent', [PaymentController::class, 'createPaymentIntent']);
+    //checkout routes 
+    // Route::post('/create-checkout-session', [PaymentController::class, 'createCheckoutSession'])->name('checkout.session');
+// Route::post('/create-payment-intent', [PaymentController::class, 'createPaymentIntent']);
+
+// Route::get('checkout/session', function () {
+//     return view('checkout.session');
+// })->name('checkout.session');
+
+
+
+
 
     
     //Do we need a controller really?

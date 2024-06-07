@@ -27,10 +27,11 @@
 
         {{-- Have to make it mobile responsive --}}
         <div class="mx-10 py-10 flex justify-center">
+            <livewire:brandlist />
             {{-- bg-[#2B752A] - the green --}}
         </div>
 
-        <livewire:brandlist />
+       
 
 
 

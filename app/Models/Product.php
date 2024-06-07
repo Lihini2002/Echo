@@ -5,9 +5,11 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
-
+use App\Models\Product;
+use App\Models\Category;
 
 class Product extends Model implements HasMedia
 {
@@ -59,6 +61,14 @@ class Product extends Model implements HasMedia
 {
     return $this->belongsToMany(Cart::class)->using(CartProduct::class);
 }
+
+
+public function categories()
+ {
+    return $this->belongsToMany(Category::class);
+       
+       
+ }
 
     // public function registerMediaConversions(Media $media = null): void
     // {

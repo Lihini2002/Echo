@@ -4,7 +4,23 @@
             <div class="md:flex-1 px-4">
                 <div class="h-[460px] rounded-lg  mb-4">
                    {{-- Product image --}}
-                    <img class="w-full h-full object-cover" src="https://cdn.pixabay.com/photo/2020/05/22/17/53/mockup-5206355_960_720.jpg" alt="Product Image">
+                   @php
+                   $imageUrl = $product->getFirstMediaUrl('product_images');
+                  @endphp
+
+                    @if($imageUrl)
+                    <img src="{{ $imageUrl }}" alt="Product Image" class="w-full h-full object-cover">
+                    @else
+                    <img src="https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg" alt="Default Image">
+                    @endif
+                    {{-- <img class="" src="https://cdn.pixabay.com/photo/2020/05/22/17/53/mockup-5206355_960_720.jpg" alt="Product Image"> --}}
+                    
+                    {{-- <div class="aspect-h-1 aspect-w-1 w-full overflow-hidden rounded-md lg:aspect-none group-hover:opacity-75 lg:h-80"> --}}
+                      
+                  
+                        
+                     
+                     
                 </div>
                 <div class="flex -mx-2 mb-4">
 
@@ -44,8 +60,11 @@
                 <div class="my-2">
                     {{-- Product Description --}}
                     <span class="font-bold text-gray-700 ">Description:</span>
+                    {{-- <p class="text-gray-600 text-sm mt-2">
+                        {{ Str::limit($product->description, 40) }}
+                    </p> --}}
                     <p class="text-gray-600 text-sm mt-2">
-                        {{ Str::limit($product->description, 200) }}
+                        {{ Str::limit($product->description, 40) }}
                     </p>
                 </div>
             </div>
